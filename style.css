@@ -1,0 +1,90 @@
+html, body {
+  margin: 30;
+  padding: 30;
+  overflow-x: hidden; /* This prevents horizontal scroll */
+}
+
+canvas {
+  display: block;
+  max-width: 95vw;
+  max-height: 100vh;
+  outline-color: #265941
+}
+
+#colorPickerContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px;
+  background: #fcfadc;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+#pageTitle {
+  font-family: 'OT Bulb', sans-serif; /* Or any other font */
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #fcfadc;
+  color: #265941
+}
+
+#submitBtn,
+#clearCanvas {
+  background-color: #265941;
+  color: #fcfadc;
+  border: none #265941;
+  padding: 10px 15px;
+  margin: 5px 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover,
+#clearCanvas:hover {
+  background-color: #1f4a36;
+}
+
+@font-face {
+  font-family: 'OT Bulb';
+  src: url('https://cdn.glitch.global/3205344f-4794-4ca5-8845-0148792f47ba/OTBulbMonoline-500.ttf?v=1751922311894') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mainHeading {
+  margin-bottom: -10px; /* adjust this number to your liking */
+}
+
+#nameInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #265941;
+  border-radius: 8px;
+  background-color: #fcfadc;
+  color: #265941;
+  width: 80%;
+  max-width: 150px;
+  margin: 10px auto;
+  display: inline;
+}
+
+#nameInput::placeholder {
+  color: #265941;
+  opacity: 70%;
+}
+
+#doodleCanvas {
+  border: 1px solid #265941 !important;
+  border-radius: 8px;
+  background-color: #fcfadc;
+}
